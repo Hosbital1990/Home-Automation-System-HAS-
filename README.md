@@ -1,4 +1,4 @@
-This HAS projct is known as comeback.
-First Git try of this project started at today Aug 30th, 2024,
-This project is enaged with Doxygen documation style and already works with this,
+This HAS project is known as Comeback.
+First Git try of this project started today Aug 30th, 2024,
+This project is engaged with the Doxygen documentation style and already works with this,
 
