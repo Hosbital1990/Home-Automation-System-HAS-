@@ -1,0 +1,137 @@
+\hypertarget{classHeater__Controller}{}\doxysection{Heater\+\_\+\+Controller Class Reference}
+\label{classHeater__Controller}\index{Heater\_Controller@{Heater\_Controller}}
+
+
+{\ttfamily \#include $<$heater\+\_\+controller.\+h$>$}
+
+
+
+Inheritance diagram for Heater\+\_\+\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classHeater__Controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Heater\+\_\+\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classHeater__Controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHeater__Controller_a2dc5a75d393755a88b1987d10bde16de}{Heater\+\_\+\+Controller}} ()
+\item 
+\mbox{\hyperlink{classHeater__Controller_ae3179090850965735dd8f6c17c9df5c2}{Heater\+\_\+\+Controller}} (std\+::string\+\_\+view \mbox{\hyperlink{classHeater__Controller_a8b4bec6ec32162f5ca091d37b3a4ad59}{name}}, int \mbox{\hyperlink{classHeater__Controller_a92030e76001c41707eba9c44cfa80556}{order\+\_\+number}}, int \mbox{\hyperlink{classHeater__Controller_a496acfc15e9f296ce850c05b39235620}{priority}}, bool \mbox{\hyperlink{classHeater__Controller_abf5d9a2f9f64b94f34e921fda5759f8b}{power\+\_\+state}}, short int \mbox{\hyperlink{classHeater__Controller_a7d21df49fc875730683092851b1d64e2}{operation\+\_\+state}}, \mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
+\item 
+\mbox{\hyperlink{classHeater__Controller_afa51c51c2924017c1c631220e84ff76b}{$\sim$\+Heater\+\_\+\+Controller}} ()
+\item 
+virtual void \mbox{\hyperlink{classHeater__Controller_ab0649dcc199723570c56be6d41f087a8}{actuator\+\_\+adjuster}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string\+\_\+view \mbox{\hyperlink{classHeater__Controller_a8b4bec6ec32162f5ca091d37b3a4ad59}{name}}
+\item 
+int \mbox{\hyperlink{classHeater__Controller_a92030e76001c41707eba9c44cfa80556}{order\+\_\+number}}
+\item 
+int \mbox{\hyperlink{classHeater__Controller_a496acfc15e9f296ce850c05b39235620}{priority}}
+\item 
+bool \mbox{\hyperlink{classHeater__Controller_abf5d9a2f9f64b94f34e921fda5759f8b}{power\+\_\+state}}
+\item 
+short int \mbox{\hyperlink{classHeater__Controller_a7d21df49fc875730683092851b1d64e2}{operation\+\_\+state}}
+\item 
+std\+::mutex \mbox{\hyperlink{classHeater__Controller_ad663627ed923896fec0548d03fde01bd}{heater\+\_\+mtx}}
+\item 
+std\+::jthread \mbox{\hyperlink{classHeater__Controller_af37ad3cfa733db0b574cb1d7a22b1402}{heater\+\_\+adjuster\+\_\+thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeater__Controller_a2dc5a75d393755a88b1987d10bde16de}\label{classHeater__Controller_a2dc5a75d393755a88b1987d10bde16de}} 
+\index{Heater\_Controller@{Heater\_Controller}!Heater\_Controller@{Heater\_Controller}}
+\index{Heater\_Controller@{Heater\_Controller}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{Heater\_Controller()}{Heater\_Controller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Heater\+\_\+\+Controller\+::\+Heater\+\_\+\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeater__Controller_ae3179090850965735dd8f6c17c9df5c2}\label{classHeater__Controller_ae3179090850965735dd8f6c17c9df5c2}} 
+\index{Heater\_Controller@{Heater\_Controller}!Heater\_Controller@{Heater\_Controller}}
+\index{Heater\_Controller@{Heater\_Controller}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{Heater\_Controller()}{Heater\_Controller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Heater\+\_\+\+Controller\+::\+Heater\+\_\+\+Controller (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{name,  }\item[{int}]{order\+\_\+number,  }\item[{int}]{priority,  }\item[{bool}]{power\+\_\+state,  }\item[{short int}]{operation\+\_\+state,  }\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHeater__Controller_afa51c51c2924017c1c631220e84ff76b}\label{classHeater__Controller_afa51c51c2924017c1c631220e84ff76b}} 
+\index{Heater\_Controller@{Heater\_Controller}!````~Heater\_Controller@{$\sim$Heater\_Controller}}
+\index{````~Heater\_Controller@{$\sim$Heater\_Controller}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{$\sim$Heater\_Controller()}{~Heater\_Controller()}}
+{\footnotesize\ttfamily Heater\+\_\+\+Controller\+::$\sim$\+Heater\+\_\+\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeater__Controller_ab0649dcc199723570c56be6d41f087a8}\label{classHeater__Controller_ab0649dcc199723570c56be6d41f087a8}} 
+\index{Heater\_Controller@{Heater\_Controller}!actuator\_adjuster@{actuator\_adjuster}}
+\index{actuator\_adjuster@{actuator\_adjuster}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{actuator\_adjuster()}{actuator\_adjuster()}}
+{\footnotesize\ttfamily void Heater\+\_\+\+Controller\+::actuator\+\_\+adjuster (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classActuator_ad8f4fe5e048472fc8dd84b32c9333367}{Actuator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHeater__Controller_af37ad3cfa733db0b574cb1d7a22b1402}\label{classHeater__Controller_af37ad3cfa733db0b574cb1d7a22b1402}} 
+\index{Heater\_Controller@{Heater\_Controller}!heater\_adjuster\_thread@{heater\_adjuster\_thread}}
+\index{heater\_adjuster\_thread@{heater\_adjuster\_thread}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{heater\_adjuster\_thread}{heater\_adjuster\_thread}}
+{\footnotesize\ttfamily std\+::jthread Heater\+\_\+\+Controller\+::heater\+\_\+adjuster\+\_\+thread\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeater__Controller_ad663627ed923896fec0548d03fde01bd}\label{classHeater__Controller_ad663627ed923896fec0548d03fde01bd}} 
+\index{Heater\_Controller@{Heater\_Controller}!heater\_mtx@{heater\_mtx}}
+\index{heater\_mtx@{heater\_mtx}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{heater\_mtx}{heater\_mtx}}
+{\footnotesize\ttfamily std\+::mutex Heater\+\_\+\+Controller\+::heater\+\_\+mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeater__Controller_a8b4bec6ec32162f5ca091d37b3a4ad59}\label{classHeater__Controller_a8b4bec6ec32162f5ca091d37b3a4ad59}} 
+\index{Heater\_Controller@{Heater\_Controller}!name@{name}}
+\index{name@{name}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string\+\_\+view Heater\+\_\+\+Controller\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeater__Controller_a7d21df49fc875730683092851b1d64e2}\label{classHeater__Controller_a7d21df49fc875730683092851b1d64e2}} 
+\index{Heater\_Controller@{Heater\_Controller}!operation\_state@{operation\_state}}
+\index{operation\_state@{operation\_state}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{operation\_state}{operation\_state}}
+{\footnotesize\ttfamily short int Heater\+\_\+\+Controller\+::operation\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeater__Controller_a92030e76001c41707eba9c44cfa80556}\label{classHeater__Controller_a92030e76001c41707eba9c44cfa80556}} 
+\index{Heater\_Controller@{Heater\_Controller}!order\_number@{order\_number}}
+\index{order\_number@{order\_number}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{order\_number}{order\_number}}
+{\footnotesize\ttfamily int Heater\+\_\+\+Controller\+::order\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeater__Controller_abf5d9a2f9f64b94f34e921fda5759f8b}\label{classHeater__Controller_abf5d9a2f9f64b94f34e921fda5759f8b}} 
+\index{Heater\_Controller@{Heater\_Controller}!power\_state@{power\_state}}
+\index{power\_state@{power\_state}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{power\_state}{power\_state}}
+{\footnotesize\ttfamily bool Heater\+\_\+\+Controller\+::power\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHeater__Controller_a496acfc15e9f296ce850c05b39235620}\label{classHeater__Controller_a496acfc15e9f296ce850c05b39235620}} 
+\index{Heater\_Controller@{Heater\_Controller}!priority@{priority}}
+\index{priority@{priority}!Heater\_Controller@{Heater\_Controller}}
+\doxysubsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily int Heater\+\_\+\+Controller\+::priority\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{heater__controller_8h}{heater\+\_\+controller.\+h}}\item 
+src/\mbox{\hyperlink{heater__controller_8cpp}{heater\+\_\+controller.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{classActuator}{}\doxysection{Actuator Class Reference}
+\label{classActuator}\index{Actuator@{Actuator}}
+
+
+{\ttfamily \#include $<$actuator.\+h$>$}
+
+
+
+Inheritance diagram for Actuator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classActuator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classActuator_ad08f81ed90eb01f4654acb47eff38be6}{Actuator}} ()
+\item 
+\mbox{\hyperlink{classActuator_a92aa452748a1e8f1feb557e1929fd878}{Actuator}} (std\+::string\+\_\+view \mbox{\hyperlink{classActuator_a9870ceac62a6e388aff4a2ec21be47a6}{name}}, bool \mbox{\hyperlink{classActuator_a03cfe2f6ccbe05ff24e39402d00019db}{power\+\_\+state}}, short int \mbox{\hyperlink{classActuator_a9a086e94cd9e159bed9529a7bc66f019}{operation\+\_\+state}})
+\item 
+virtual \mbox{\hyperlink{classActuator_a3c19e3031076395a918ab72e1acc8a3c}{$\sim$\+Actuator}} ()
+\item 
+virtual void \mbox{\hyperlink{classActuator_ad8f4fe5e048472fc8dd84b32c9333367}{actuator\+\_\+adjuster}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string\+\_\+view \mbox{\hyperlink{classActuator_a9870ceac62a6e388aff4a2ec21be47a6}{name}}
+\item 
+bool \mbox{\hyperlink{classActuator_a03cfe2f6ccbe05ff24e39402d00019db}{power\+\_\+state}}
+\item 
+short int \mbox{\hyperlink{classActuator_a9a086e94cd9e159bed9529a7bc66f019}{operation\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classActuator_ad08f81ed90eb01f4654acb47eff38be6}\label{classActuator_ad08f81ed90eb01f4654acb47eff38be6}} 
+\index{Actuator@{Actuator}!Actuator@{Actuator}}
+\index{Actuator@{Actuator}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{Actuator()}{Actuator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Actuator\+::\+Actuator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classActuator_a92aa452748a1e8f1feb557e1929fd878}\label{classActuator_a92aa452748a1e8f1feb557e1929fd878}} 
+\index{Actuator@{Actuator}!Actuator@{Actuator}}
+\index{Actuator@{Actuator}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{Actuator()}{Actuator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Actuator\+::\+Actuator (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{name,  }\item[{bool}]{power\+\_\+state,  }\item[{short int}]{operation\+\_\+state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classActuator_a3c19e3031076395a918ab72e1acc8a3c}\label{classActuator_a3c19e3031076395a918ab72e1acc8a3c}} 
+\index{Actuator@{Actuator}!````~Actuator@{$\sim$Actuator}}
+\index{````~Actuator@{$\sim$Actuator}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Actuator()}{~Actuator()}}
+{\footnotesize\ttfamily Actuator\+::$\sim$\+Actuator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classActuator_ad8f4fe5e048472fc8dd84b32c9333367}\label{classActuator_ad8f4fe5e048472fc8dd84b32c9333367}} 
+\index{Actuator@{Actuator}!actuator\_adjuster@{actuator\_adjuster}}
+\index{actuator\_adjuster@{actuator\_adjuster}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{actuator\_adjuster()}{actuator\_adjuster()}}
+{\footnotesize\ttfamily void Actuator\+::actuator\+\_\+adjuster (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classHeater__Controller_ab0649dcc199723570c56be6d41f087a8}{Heater\+\_\+\+Controller}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classActuator_a9870ceac62a6e388aff4a2ec21be47a6}\label{classActuator_a9870ceac62a6e388aff4a2ec21be47a6}} 
+\index{Actuator@{Actuator}!name@{name}}
+\index{name@{name}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string\+\_\+view Actuator\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classActuator_a9a086e94cd9e159bed9529a7bc66f019}\label{classActuator_a9a086e94cd9e159bed9529a7bc66f019}} 
+\index{Actuator@{Actuator}!operation\_state@{operation\_state}}
+\index{operation\_state@{operation\_state}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{operation\_state}{operation\_state}}
+{\footnotesize\ttfamily short int Actuator\+::operation\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classActuator_a03cfe2f6ccbe05ff24e39402d00019db}\label{classActuator_a03cfe2f6ccbe05ff24e39402d00019db}} 
+\index{Actuator@{Actuator}!power\_state@{power\_state}}
+\index{power\_state@{power\_state}!Actuator@{Actuator}}
+\doxysubsubsection{\texorpdfstring{power\_state}{power\_state}}
+{\footnotesize\ttfamily bool Actuator\+::power\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{actuator_8h}{actuator.\+h}}\item 
+src/\mbox{\hyperlink{actuator_8cpp}{actuator.\+cpp}}\end{DoxyCompactItemize}

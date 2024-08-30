@@ -1,0 +1,212 @@
+\hypertarget{classTemp__Sensor}{}\doxysection{Temp\+\_\+\+Sensor Class Reference}
+\label{classTemp__Sensor}\index{Temp\_Sensor@{Temp\_Sensor}}
+
+
+{\ttfamily \#include $<$temp\+\_\+sensor.\+h$>$}
+
+
+
+Inheritance diagram for Temp\+\_\+\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classTemp__Sensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Temp\+\_\+\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classTemp__Sensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTemp__Sensor_aafb73d9de5df77e7b8067149502b4199}{Temp\+\_\+\+Sensor}} ()
+\item 
+\mbox{\hyperlink{classTemp__Sensor_acfd7199a816b8105dd5a1c1904cd6cef}{Temp\+\_\+\+Sensor}} (std\+::string\+\_\+view \mbox{\hyperlink{classTemp__Sensor_ae60d039fc2014b2c30c67083fbda9283}{name}}, int \mbox{\hyperlink{classTemp__Sensor_ad7b97636fa2a5eec94d9591ea59d577c}{order\+\_\+number}}, int \mbox{\hyperlink{classTemp__Sensor_aeb7d6947a3f4b276c4a209f40440bc71}{priority}}, bool \mbox{\hyperlink{classTemp__Sensor_ae241166ff4633bf86997b8ae823e7a85}{power\+\_\+state}}, short int \mbox{\hyperlink{classTemp__Sensor_ad856c6bce1386bff178e45050391d213}{operation\+\_\+state}})
+\item 
+virtual \mbox{\hyperlink{classTemp__Sensor_ab532dd50e2840567a636b8fa62d26b69}{$\sim$\+Temp\+\_\+\+Sensor}} ()
+\item 
+virtual std\+::vector$<$ double $>$ \mbox{\hyperlink{classTemp__Sensor_ae62bb9900405c2e436435481f42d75e0}{providing\+\_\+data}} () override
+\item 
+std\+::string \mbox{\hyperlink{classTemp__Sensor_ab71bd5328dc03ac6b766ff14a14a6111}{get\+\_\+\+Data\+Base\+\_\+name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string\+\_\+view \mbox{\hyperlink{classTemp__Sensor_ae60d039fc2014b2c30c67083fbda9283}{name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classTemp__Sensor_a16bc8b8bf07092dabf11affa6cc490e4}{start\+\_\+data\+\_\+reading}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \mbox{\hyperlink{classTemp__Sensor_a7e0fa17f6cb8f053ef74728251241f2d}{temp\+\_\+mtx}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classTemp__Sensor_af1a6701ad62da347ec2c67b979ddeafc}{raw\+\_\+temp\+\_\+data}}
+\item 
+int \mbox{\hyperlink{classTemp__Sensor_ad7b97636fa2a5eec94d9591ea59d577c}{order\+\_\+number}}
+\item 
+int \mbox{\hyperlink{classTemp__Sensor_aeb7d6947a3f4b276c4a209f40440bc71}{priority}}
+\item 
+bool \mbox{\hyperlink{classTemp__Sensor_ae241166ff4633bf86997b8ae823e7a85}{power\+\_\+state}}
+\item 
+short int \mbox{\hyperlink{classTemp__Sensor_ad856c6bce1386bff178e45050391d213}{operation\+\_\+state}}
+\item 
+std\+::jthread \mbox{\hyperlink{classTemp__Sensor_ada5f0f54110de22a1d42ebdf9b86d56e}{temp\+\_\+data\+\_\+reading\+\_\+thread}}
+\item 
+bool \mbox{\hyperlink{classTemp__Sensor_a19da5d503f0d946cd1eb9389d061c206}{data\+\_\+is\+\_\+ready}} =false
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{classTemp__Sensor_a293e980d311174e70ce67fe525533918}{cv}}
+\item 
+const std\+::string\+\_\+view \mbox{\hyperlink{classTemp__Sensor_acfe54f560aeaa4d524f7dccf94b77968}{file\+\_\+save\+\_\+location}} = \char`\"{}$\sim$/Project/comeback/temp\+\_\+storage\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{classTemp__Sensor_a75372d3e2ea78a49faabbd9c877519ae}{Data\+Base\+\_\+name}} = \char`\"{}temp\+\_\+\+Data\+Base.\+db\char`\"{}
+\item 
+short int \mbox{\hyperlink{classTemp__Sensor_a8177c6831d428f1ad23672e0d07fc1da}{db\+\_\+bunch\+\_\+size}} \{10\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTemp__Sensor_aafb73d9de5df77e7b8067149502b4199}\label{classTemp__Sensor_aafb73d9de5df77e7b8067149502b4199}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!Temp\_Sensor@{Temp\_Sensor}}
+\index{Temp\_Sensor@{Temp\_Sensor}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{Temp\_Sensor()}{Temp\_Sensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Temp\+\_\+\+Sensor\+::\+Temp\+\_\+\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemp__Sensor_acfd7199a816b8105dd5a1c1904cd6cef}\label{classTemp__Sensor_acfd7199a816b8105dd5a1c1904cd6cef}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!Temp\_Sensor@{Temp\_Sensor}}
+\index{Temp\_Sensor@{Temp\_Sensor}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{Temp\_Sensor()}{Temp\_Sensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Temp\+\_\+\+Sensor\+::\+Temp\+\_\+\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{name,  }\item[{int}]{order\+\_\+number,  }\item[{int}]{priority,  }\item[{bool}]{power\+\_\+state,  }\item[{short int}]{operation\+\_\+state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemp__Sensor_ab532dd50e2840567a636b8fa62d26b69}\label{classTemp__Sensor_ab532dd50e2840567a636b8fa62d26b69}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!````~Temp\_Sensor@{$\sim$Temp\_Sensor}}
+\index{````~Temp\_Sensor@{$\sim$Temp\_Sensor}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Temp\_Sensor()}{~Temp\_Sensor()}}
+{\footnotesize\ttfamily Temp\+\_\+\+Sensor\+::$\sim$\+Temp\+\_\+\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTemp__Sensor_ab71bd5328dc03ac6b766ff14a14a6111}\label{classTemp__Sensor_ab71bd5328dc03ac6b766ff14a14a6111}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!get\_DataBase\_name@{get\_DataBase\_name}}
+\index{get\_DataBase\_name@{get\_DataBase\_name}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{get\_DataBase\_name()}{get\_DataBase\_name()}}
+{\footnotesize\ttfamily std\+::string Temp\+\_\+\+Sensor\+::get\+\_\+\+Data\+Base\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTemp__Sensor_ae62bb9900405c2e436435481f42d75e0}\label{classTemp__Sensor_ae62bb9900405c2e436435481f42d75e0}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!providing\_data@{providing\_data}}
+\index{providing\_data@{providing\_data}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{providing\_data()}{providing\_data()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Temp\+\_\+\+Sensor\+::providing\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classSensor_a4599c1582ea63a87686624d7761cd0c3}{Sensor}}.
+
+\mbox{\Hypertarget{classTemp__Sensor_a16bc8b8bf07092dabf11affa6cc490e4}\label{classTemp__Sensor_a16bc8b8bf07092dabf11affa6cc490e4}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!start\_data\_reading@{start\_data\_reading}}
+\index{start\_data\_reading@{start\_data\_reading}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{start\_data\_reading()}{start\_data\_reading()}}
+{\footnotesize\ttfamily void Temp\+\_\+\+Sensor\+::start\+\_\+data\+\_\+reading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classSensor_a636d73558329166edc57002ec7674018}{Sensor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTemp__Sensor_a293e980d311174e70ce67fe525533918}\label{classTemp__Sensor_a293e980d311174e70ce67fe525533918}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!cv@{cv}}
+\index{cv@{cv}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{cv}{cv}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable Temp\+\_\+\+Sensor\+::cv\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_a19da5d503f0d946cd1eb9389d061c206}\label{classTemp__Sensor_a19da5d503f0d946cd1eb9389d061c206}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!data\_is\_ready@{data\_is\_ready}}
+\index{data\_is\_ready@{data\_is\_ready}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{data\_is\_ready}{data\_is\_ready}}
+{\footnotesize\ttfamily bool Temp\+\_\+\+Sensor\+::data\+\_\+is\+\_\+ready =false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_a75372d3e2ea78a49faabbd9c877519ae}\label{classTemp__Sensor_a75372d3e2ea78a49faabbd9c877519ae}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!DataBase\_name@{DataBase\_name}}
+\index{DataBase\_name@{DataBase\_name}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{DataBase\_name}{DataBase\_name}}
+{\footnotesize\ttfamily const std\+::string Temp\+\_\+\+Sensor\+::\+Data\+Base\+\_\+name = \char`\"{}temp\+\_\+\+Data\+Base.\+db\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_a8177c6831d428f1ad23672e0d07fc1da}\label{classTemp__Sensor_a8177c6831d428f1ad23672e0d07fc1da}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!db\_bunch\_size@{db\_bunch\_size}}
+\index{db\_bunch\_size@{db\_bunch\_size}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{db\_bunch\_size}{db\_bunch\_size}}
+{\footnotesize\ttfamily short int Temp\+\_\+\+Sensor\+::db\+\_\+bunch\+\_\+size \{10\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_acfe54f560aeaa4d524f7dccf94b77968}\label{classTemp__Sensor_acfe54f560aeaa4d524f7dccf94b77968}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!file\_save\_location@{file\_save\_location}}
+\index{file\_save\_location@{file\_save\_location}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{file\_save\_location}{file\_save\_location}}
+{\footnotesize\ttfamily const std\+::string\+\_\+view Temp\+\_\+\+Sensor\+::file\+\_\+save\+\_\+location = \char`\"{}$\sim$/Project/comeback/temp\+\_\+storage\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_ae60d039fc2014b2c30c67083fbda9283}\label{classTemp__Sensor_ae60d039fc2014b2c30c67083fbda9283}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!name@{name}}
+\index{name@{name}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string\+\_\+view Temp\+\_\+\+Sensor\+::name}
+
+\mbox{\Hypertarget{classTemp__Sensor_ad856c6bce1386bff178e45050391d213}\label{classTemp__Sensor_ad856c6bce1386bff178e45050391d213}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!operation\_state@{operation\_state}}
+\index{operation\_state@{operation\_state}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{operation\_state}{operation\_state}}
+{\footnotesize\ttfamily short int Temp\+\_\+\+Sensor\+::operation\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_ad7b97636fa2a5eec94d9591ea59d577c}\label{classTemp__Sensor_ad7b97636fa2a5eec94d9591ea59d577c}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!order\_number@{order\_number}}
+\index{order\_number@{order\_number}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{order\_number}{order\_number}}
+{\footnotesize\ttfamily int Temp\+\_\+\+Sensor\+::order\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_ae241166ff4633bf86997b8ae823e7a85}\label{classTemp__Sensor_ae241166ff4633bf86997b8ae823e7a85}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!power\_state@{power\_state}}
+\index{power\_state@{power\_state}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{power\_state}{power\_state}}
+{\footnotesize\ttfamily bool Temp\+\_\+\+Sensor\+::power\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_aeb7d6947a3f4b276c4a209f40440bc71}\label{classTemp__Sensor_aeb7d6947a3f4b276c4a209f40440bc71}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!priority@{priority}}
+\index{priority@{priority}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily int Temp\+\_\+\+Sensor\+::priority\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_af1a6701ad62da347ec2c67b979ddeafc}\label{classTemp__Sensor_af1a6701ad62da347ec2c67b979ddeafc}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!raw\_temp\_data@{raw\_temp\_data}}
+\index{raw\_temp\_data@{raw\_temp\_data}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{raw\_temp\_data}{raw\_temp\_data}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Temp\+\_\+\+Sensor\+::raw\+\_\+temp\+\_\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_ada5f0f54110de22a1d42ebdf9b86d56e}\label{classTemp__Sensor_ada5f0f54110de22a1d42ebdf9b86d56e}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!temp\_data\_reading\_thread@{temp\_data\_reading\_thread}}
+\index{temp\_data\_reading\_thread@{temp\_data\_reading\_thread}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{temp\_data\_reading\_thread}{temp\_data\_reading\_thread}}
+{\footnotesize\ttfamily std\+::jthread Temp\+\_\+\+Sensor\+::temp\+\_\+data\+\_\+reading\+\_\+thread\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTemp__Sensor_a7e0fa17f6cb8f053ef74728251241f2d}\label{classTemp__Sensor_a7e0fa17f6cb8f053ef74728251241f2d}} 
+\index{Temp\_Sensor@{Temp\_Sensor}!temp\_mtx@{temp\_mtx}}
+\index{temp\_mtx@{temp\_mtx}!Temp\_Sensor@{Temp\_Sensor}}
+\doxysubsubsection{\texorpdfstring{temp\_mtx}{temp\_mtx}}
+{\footnotesize\ttfamily std\+::mutex Temp\+\_\+\+Sensor\+::temp\+\_\+mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{temp__sensor_8h}{temp\+\_\+sensor.\+h}}\item 
+src/\mbox{\hyperlink{temp__sensor_8cpp}{temp\+\_\+sensor.\+cpp}}\end{DoxyCompactItemize}

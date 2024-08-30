@@ -1,0 +1,14 @@
+<map id="include/actuator.h" name="include/actuator.h">
+<area shape="rect" id="node1" title=" " alt="" coords="341,5,480,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,69,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="448,80,520,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="544,80,611,107"/>
+<area shape="rect" id="node5" href="$sensor_8h.html" title=" " alt="" coords="522,155,598,181"/>
+<area shape="rect" id="node9" href="$temp__sensor_8h.html" title=" " alt="" coords="256,80,373,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="268,229,348,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="589,229,648,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="469,229,531,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="93,155,157,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="233,155,279,181"/>
+<area shape="rect" id="node12" title=" " alt="" coords="303,155,446,181"/>
+</map>

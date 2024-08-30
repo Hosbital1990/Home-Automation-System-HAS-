@@ -1,0 +1,35 @@
+\hypertarget{memory__interface_8h}{}\doxysection{include/memory\+\_\+interface.h File Reference}
+\label{memory__interface_8h}\index{include/memory\_interface.h@{include/memory\_interface.h}}
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}sqlite3.\+h\char`\"{}}\newline
+Include dependency graph for memory\+\_\+interface.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{memory__interface_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{memory__interface_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceMemoryInterface}{Memory\+Interface}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceMemoryInterface_a7eb7fc07ac788cfe46ffef3a61cd5b2e}{Memory\+Interface\+::write\+\_\+data}} (std\+::vector$<$ double $>$ data, const std\+::string \&filename)
+\item 
+int \mbox{\hyperlink{namespaceMemoryInterface_a63761f034372b4d606a02386c84732ad}{Memory\+Interface\+::read\+\_\+data}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespaceMemoryInterface_a531ba538f2a11bbd2135bcbb50597fe5}{Memory\+Interface\+::\+Insert\+\_\+\+Data\+Base}} (const T \&obj, std\+::vector$<$ double $>$ data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ double $>$ \mbox{\hyperlink{namespaceMemoryInterface_a46c3a28387e8e58bd58a3379837fa7c5}{Memory\+Interface\+::\+Select\+\_\+database}} (const T \&obj, int number\+\_\+of\+\_\+selected\+\_\+data=1)
+\end{DoxyCompactItemize}

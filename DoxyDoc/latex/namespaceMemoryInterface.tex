@@ -1,0 +1,42 @@
+\hypertarget{namespaceMemoryInterface}{}\doxysection{Memory\+Interface Namespace Reference}
+\label{namespaceMemoryInterface}\index{MemoryInterface@{MemoryInterface}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceMemoryInterface_a7eb7fc07ac788cfe46ffef3a61cd5b2e}{write\+\_\+data}} (std\+::vector$<$ double $>$ data, const std\+::string \&filename)
+\item 
+int \mbox{\hyperlink{namespaceMemoryInterface_a63761f034372b4d606a02386c84732ad}{read\+\_\+data}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespaceMemoryInterface_a531ba538f2a11bbd2135bcbb50597fe5}{Insert\+\_\+\+Data\+Base}} (const T \&obj, std\+::vector$<$ double $>$ data)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ double $>$ \mbox{\hyperlink{namespaceMemoryInterface_a46c3a28387e8e58bd58a3379837fa7c5}{Select\+\_\+database}} (const T \&obj, int number\+\_\+of\+\_\+selected\+\_\+data=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceMemoryInterface_a531ba538f2a11bbd2135bcbb50597fe5}\label{namespaceMemoryInterface_a531ba538f2a11bbd2135bcbb50597fe5}} 
+\index{MemoryInterface@{MemoryInterface}!Insert\_DataBase@{Insert\_DataBase}}
+\index{Insert\_DataBase@{Insert\_DataBase}!MemoryInterface@{MemoryInterface}}
+\doxysubsubsection{\texorpdfstring{Insert\_DataBase()}{Insert\_DataBase()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Memory\+Interface\+::\+Insert\+\_\+\+Data\+Base (\begin{DoxyParamCaption}\item[{const T \&}]{obj,  }\item[{std\+::vector$<$ double $>$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceMemoryInterface_a63761f034372b4d606a02386c84732ad}\label{namespaceMemoryInterface_a63761f034372b4d606a02386c84732ad}} 
+\index{MemoryInterface@{MemoryInterface}!read\_data@{read\_data}}
+\index{read\_data@{read\_data}!MemoryInterface@{MemoryInterface}}
+\doxysubsubsection{\texorpdfstring{read\_data()}{read\_data()}}
+{\footnotesize\ttfamily int Memory\+Interface\+::read\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceMemoryInterface_a46c3a28387e8e58bd58a3379837fa7c5}\label{namespaceMemoryInterface_a46c3a28387e8e58bd58a3379837fa7c5}} 
+\index{MemoryInterface@{MemoryInterface}!Select\_database@{Select\_database}}
+\index{Select\_database@{Select\_database}!MemoryInterface@{MemoryInterface}}
+\doxysubsubsection{\texorpdfstring{Select\_database()}{Select\_database()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$double$>$ Memory\+Interface\+::\+Select\+\_\+database (\begin{DoxyParamCaption}\item[{const T \&}]{obj,  }\item[{int}]{number\+\_\+of\+\_\+selected\+\_\+data = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceMemoryInterface_a7eb7fc07ac788cfe46ffef3a61cd5b2e}\label{namespaceMemoryInterface_a7eb7fc07ac788cfe46ffef3a61cd5b2e}} 
+\index{MemoryInterface@{MemoryInterface}!write\_data@{write\_data}}
+\index{write\_data@{write\_data}!MemoryInterface@{MemoryInterface}}
+\doxysubsubsection{\texorpdfstring{write\_data()}{write\_data()}}
+{\footnotesize\ttfamily bool Memory\+Interface\+::write\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{data,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+

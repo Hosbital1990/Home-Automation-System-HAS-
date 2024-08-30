@@ -1,0 +1,154 @@
+\hypertarget{classSensor}{}\doxysection{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+
+
+Inheritance diagram for Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classSensor__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}{Sensor}} ()
+\item 
+\mbox{\hyperlink{classSensor_ac24d54ba05c51d4421f761d84a0092b8}{Sensor}} (std\+::string\+\_\+view \mbox{\hyperlink{classSensor_a04b8edbb08e356b0c9ae813e2280df07}{name}}, int \mbox{\hyperlink{classSensor_a4c4a4b48addcaeee3b1259d54e5f6ae8}{order\+\_\+number}}, int \mbox{\hyperlink{classSensor_ad06477a2761654095ad23aeeb81a0247}{priority}}, bool \mbox{\hyperlink{classSensor_a8adbfec5137e8f25a5671da73e815389}{power\+\_\+state}}, short int \mbox{\hyperlink{classSensor_a76e9d7bd56b1c1b3b4417fc607f6003d}{operation\+\_\+state}})
+\item 
+virtual \mbox{\hyperlink{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}{$\sim$\+Sensor}} ()
+\item 
+virtual std\+::vector$<$ double $>$ \mbox{\hyperlink{classSensor_a4599c1582ea63a87686624d7761cd0c3}{providing\+\_\+data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string\+\_\+view \mbox{\hyperlink{classSensor_a04b8edbb08e356b0c9ae813e2280df07}{name}}
+\item 
+int \mbox{\hyperlink{classSensor_a4c4a4b48addcaeee3b1259d54e5f6ae8}{order\+\_\+number}}
+\item 
+int \mbox{\hyperlink{classSensor_ad06477a2761654095ad23aeeb81a0247}{priority}}
+\item 
+bool \mbox{\hyperlink{classSensor_a8adbfec5137e8f25a5671da73e815389}{power\+\_\+state}}
+\item 
+short int \mbox{\hyperlink{classSensor_a76e9d7bd56b1c1b3b4417fc607f6003d}{operation\+\_\+state}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classSensor_a636d73558329166edc57002ec7674018}{start\+\_\+data\+\_\+reading}} ()
+\item 
+virtual bool \mbox{\hyperlink{classSensor_ada9116066fc391a80cf590efe6ba1779}{power\+\_\+trigger}} ()
+\item 
+virtual bool \mbox{\hyperlink{classSensor_ac4275da767694b0529e62a5f9a847548}{change\+\_\+operation\+\_\+state}} (int new\+\_\+state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSensor_a71ea930f1eccf582df0c4af3045b912b}{sensor\+\_\+manager}} (\mbox{\hyperlink{classSensor}{Sensor}} $\ast$sensor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}\label{classSensor_a342d6d11ef572c8cba92cb76fb1a294b}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSensor_ac24d54ba05c51d4421f761d84a0092b8}\label{classSensor_ac24d54ba05c51d4421f761d84a0092b8}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Sensor()}{Sensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{name,  }\item[{int}]{order\+\_\+number,  }\item[{int}]{priority,  }\item[{bool}]{power\+\_\+state,  }\item[{short int}]{operation\+\_\+state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}\label{classSensor_aee8c70e7ef05ce65e7ee33686b5d7db2}} 
+\index{Sensor@{Sensor}!````~Sensor@{$\sim$Sensor}}
+\index{````~Sensor@{$\sim$Sensor}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sensor()}{~Sensor()}}
+{\footnotesize\ttfamily Sensor\+::$\sim$\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensor_ac4275da767694b0529e62a5f9a847548}\label{classSensor_ac4275da767694b0529e62a5f9a847548}} 
+\index{Sensor@{Sensor}!change\_operation\_state@{change\_operation\_state}}
+\index{change\_operation\_state@{change\_operation\_state}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{change\_operation\_state()}{change\_operation\_state()}}
+{\footnotesize\ttfamily bool Sensor\+::change\+\_\+operation\+\_\+state (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classSensor_ada9116066fc391a80cf590efe6ba1779}\label{classSensor_ada9116066fc391a80cf590efe6ba1779}} 
+\index{Sensor@{Sensor}!power\_trigger@{power\_trigger}}
+\index{power\_trigger@{power\_trigger}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{power\_trigger()}{power\_trigger()}}
+{\footnotesize\ttfamily bool Sensor\+::power\+\_\+trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classSensor_a4599c1582ea63a87686624d7761cd0c3}\label{classSensor_a4599c1582ea63a87686624d7761cd0c3}} 
+\index{Sensor@{Sensor}!providing\_data@{providing\_data}}
+\index{providing\_data@{providing\_data}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{providing\_data()}{providing\_data()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Sensor\+::providing\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classTemp__Sensor_ae62bb9900405c2e436435481f42d75e0}{Temp\+\_\+\+Sensor}}.
+
+\mbox{\Hypertarget{classSensor_a71ea930f1eccf582df0c4af3045b912b}\label{classSensor_a71ea930f1eccf582df0c4af3045b912b}} 
+\index{Sensor@{Sensor}!sensor\_manager@{sensor\_manager}}
+\index{sensor\_manager@{sensor\_manager}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{sensor\_manager()}{sensor\_manager()}}
+{\footnotesize\ttfamily void Sensor\+::sensor\+\_\+manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSensor}{Sensor}} $\ast$}]{sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSensor_a636d73558329166edc57002ec7674018}\label{classSensor_a636d73558329166edc57002ec7674018}} 
+\index{Sensor@{Sensor}!start\_data\_reading@{start\_data\_reading}}
+\index{start\_data\_reading@{start\_data\_reading}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{start\_data\_reading()}{start\_data\_reading()}}
+{\footnotesize\ttfamily void Sensor\+::start\+\_\+data\+\_\+reading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classTemp__Sensor_a16bc8b8bf07092dabf11affa6cc490e4}{Temp\+\_\+\+Sensor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSensor_a04b8edbb08e356b0c9ae813e2280df07}\label{classSensor_a04b8edbb08e356b0c9ae813e2280df07}} 
+\index{Sensor@{Sensor}!name@{name}}
+\index{name@{name}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string\+\_\+view Sensor\+::name}
+
+\mbox{\Hypertarget{classSensor_a76e9d7bd56b1c1b3b4417fc607f6003d}\label{classSensor_a76e9d7bd56b1c1b3b4417fc607f6003d}} 
+\index{Sensor@{Sensor}!operation\_state@{operation\_state}}
+\index{operation\_state@{operation\_state}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{operation\_state}{operation\_state}}
+{\footnotesize\ttfamily short int Sensor\+::operation\+\_\+state}
+
+\mbox{\Hypertarget{classSensor_a4c4a4b48addcaeee3b1259d54e5f6ae8}\label{classSensor_a4c4a4b48addcaeee3b1259d54e5f6ae8}} 
+\index{Sensor@{Sensor}!order\_number@{order\_number}}
+\index{order\_number@{order\_number}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{order\_number}{order\_number}}
+{\footnotesize\ttfamily int Sensor\+::order\+\_\+number}
+
+\mbox{\Hypertarget{classSensor_a8adbfec5137e8f25a5671da73e815389}\label{classSensor_a8adbfec5137e8f25a5671da73e815389}} 
+\index{Sensor@{Sensor}!power\_state@{power\_state}}
+\index{power\_state@{power\_state}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{power\_state}{power\_state}}
+{\footnotesize\ttfamily bool Sensor\+::power\+\_\+state}
+
+\mbox{\Hypertarget{classSensor_ad06477a2761654095ad23aeeb81a0247}\label{classSensor_ad06477a2761654095ad23aeeb81a0247}} 
+\index{Sensor@{Sensor}!priority@{priority}}
+\index{priority@{priority}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily int Sensor\+::priority}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{sensor_8h}{sensor.\+h}}\item 
+src/\mbox{\hyperlink{sensor_8cpp}{sensor.\+cpp}}\end{DoxyCompactItemize}

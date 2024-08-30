@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                "/usr/include",               // Add this for general include files
+                "/usr/local/include",               // Add this for general include files
+                "/usr/include/opencv4",       // Add this for OpenCV version-specific includes
+                "/usr/include/opencv4/opencv2" // Ensure this path if your OpenCV headers are here
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerPath": "/usr/bin/g++-13"
+        }
+    ],
+    "version": 4
+}

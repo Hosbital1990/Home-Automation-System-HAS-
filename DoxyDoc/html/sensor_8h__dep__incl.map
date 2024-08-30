@@ -1,0 +1,11 @@
+<map id="include/sensor.h" name="include/sensor.h">
+<area shape="rect" id="node1" title=" " alt="" coords="321,5,448,32"/>
+<area shape="rect" id="node2" href="$actuator_8h.html" title=" " alt="" coords="253,155,391,181"/>
+<area shape="rect" id="node4" href="$central__manager_8cpp.html" title=" " alt="" coords="153,304,334,331"/>
+<area shape="rect" id="node7" href="$temp__sensor_8h.html" title=" " alt="" coords="369,80,537,107"/>
+<area shape="rect" id="node9" href="$sensor_8cpp.html" title=" " alt="" coords="561,80,675,107"/>
+<area shape="rect" id="node3" href="$heater__controller_8h.html" title=" " alt="" coords="225,229,419,256"/>
+<area shape="rect" id="node6" href="$actuator_8cpp.html" title=" " alt="" coords="25,229,150,256"/>
+<area shape="rect" id="node5" href="$heater__controller_8cpp.html" title=" " alt="" coords="387,304,569,331"/>
+<area shape="rect" id="node8" href="$temp__sensor_8cpp.html" title=" " alt="" coords="545,155,699,181"/>
+</map>

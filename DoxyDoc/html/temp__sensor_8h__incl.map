@@ -1,0 +1,11 @@
+<map id="include/temp_sensor.h" name="include/temp_sensor.h">
+<area shape="rect" id="node1" title=" " alt="" coords="187,5,355,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,85,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="115,155,173,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="273,80,337,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="201,155,263,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="362,80,409,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="433,80,497,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="522,80,665,107"/>
+<area shape="rect" id="node9" href="$sensor_8h.html" title=" " alt="" coords="71,80,147,107"/>
+</map>

@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++-13 Home Automation System",
+            "command": "/usr/bin/g++-13",
+            "args": [
+                "-std=c++20",
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/**.cpp",
+                "${workspaceFolder}/src/**.cpp",
+                "-I${workspaceFolder}/include",
+                "-I/usr/include",
+                "-I/usr/include/opencv4",
+                "-L/usr/lib/x86_64-linux-gnu",
+                "-lopencv_core",
+                "-lopencv_highgui",
+                "-lopencv_imgcodecs",
+                "-lopencv_imgproc",
+                "-lopencv_videoio",
+                "-lopencv_objdetect",
+                "-o",
+                "${workspaceFolder}/main",
+                "-pthread",
+                "-lsqlite3",
+                "-lncurses",
+                "-Wno-deprecated-enum-enum-conversion"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: /usr/bin/g++-13"
+        }
+    ]
+}
+
+

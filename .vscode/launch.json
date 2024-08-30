@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "C/C++: g++-13 build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main", // **Change**: Updated path to the executable in the `bin` directory
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // **Change**: Set the current working directory to the root of the workspace
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+           // "preLaunchTask": "C/C++: g++-13 Home Automation System",
+
+            "miDebuggerPath": "/usr/bin/gdb",
+        }
+    ],
+    "version": "2.0.0"
+}
+

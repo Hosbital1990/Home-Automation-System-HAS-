@@ -1,0 +1,58 @@
+\hypertarget{camera_8cpp}{}\doxysection{src/camera.cpp File Reference}
+\label{camera_8cpp}\index{src/camera.cpp@{src/camera.cpp}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}camera.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$ncurses.\+h$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+{\ttfamily \#include $<$opencv2/objdetect.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/imgproc.\+hpp$>$}\newline
+Include dependency graph for camera.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{camera_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{camera_8cpp_adbd68b486196712fa0d8383303f8af1a}{pressed\+\_\+key}} \{\char`\"{}\char`\"{}\}
+\item 
+std\+::mutex \mbox{\hyperlink{camera_8cpp_af3a0d40e2047580695138e03dc695f5b}{pressed\+\_\+key\+\_\+mutex}}
+\item 
+std\+::mutex \mbox{\hyperlink{camera_8cpp_a1332e84e3db57a4f7e8521b94954707d}{opencv\+\_\+function\+\_\+access\+\_\+mutex}}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{camera_8cpp_ae6c1072973062e5ede5afd22530acea0}{pressed\+\_\+key\+\_\+condition}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{camera_8cpp_a1332e84e3db57a4f7e8521b94954707d}\label{camera_8cpp_a1332e84e3db57a4f7e8521b94954707d}} 
+\index{camera.cpp@{camera.cpp}!opencv\_function\_access\_mutex@{opencv\_function\_access\_mutex}}
+\index{opencv\_function\_access\_mutex@{opencv\_function\_access\_mutex}!camera.cpp@{camera.cpp}}
+\doxysubsubsection{\texorpdfstring{opencv\_function\_access\_mutex}{opencv\_function\_access\_mutex}}
+{\footnotesize\ttfamily std\+::mutex opencv\+\_\+function\+\_\+access\+\_\+mutex}
+
+\mbox{\Hypertarget{camera_8cpp_adbd68b486196712fa0d8383303f8af1a}\label{camera_8cpp_adbd68b486196712fa0d8383303f8af1a}} 
+\index{camera.cpp@{camera.cpp}!pressed\_key@{pressed\_key}}
+\index{pressed\_key@{pressed\_key}!camera.cpp@{camera.cpp}}
+\doxysubsubsection{\texorpdfstring{pressed\_key}{pressed\_key}}
+{\footnotesize\ttfamily std\+::string pressed\+\_\+key \{\char`\"{}\char`\"{}\}}
+
+\mbox{\Hypertarget{camera_8cpp_ae6c1072973062e5ede5afd22530acea0}\label{camera_8cpp_ae6c1072973062e5ede5afd22530acea0}} 
+\index{camera.cpp@{camera.cpp}!pressed\_key\_condition@{pressed\_key\_condition}}
+\index{pressed\_key\_condition@{pressed\_key\_condition}!camera.cpp@{camera.cpp}}
+\doxysubsubsection{\texorpdfstring{pressed\_key\_condition}{pressed\_key\_condition}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable pressed\+\_\+key\+\_\+condition}
+
+\mbox{\Hypertarget{camera_8cpp_af3a0d40e2047580695138e03dc695f5b}\label{camera_8cpp_af3a0d40e2047580695138e03dc695f5b}} 
+\index{camera.cpp@{camera.cpp}!pressed\_key\_mutex@{pressed\_key\_mutex}}
+\index{pressed\_key\_mutex@{pressed\_key\_mutex}!camera.cpp@{camera.cpp}}
+\doxysubsubsection{\texorpdfstring{pressed\_key\_mutex}{pressed\_key\_mutex}}
+{\footnotesize\ttfamily std\+::mutex pressed\+\_\+key\+\_\+mutex}
+
