@@ -27,7 +27,11 @@
                 "-pthread",
                 "-lsqlite3",
                 "-lncurses",
+                "-lfltk",          
+                "-lfltk_images",   
+                "-lfltk_forms",     
                 "-Wno-deprecated-enum-enum-conversion"
+
             ],
             "options": {
                 "cwd": "${fileDirname}"
