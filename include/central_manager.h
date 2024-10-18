@@ -8,7 +8,7 @@
 #include <iostream>
 
 
-class CentralManager {
+class   CentralManager {
 
 public:
 

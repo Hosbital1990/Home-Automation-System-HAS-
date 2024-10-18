@@ -5,10 +5,16 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include",
-                "/usr/include",               // Add this for general include files
+                
+                "/home/hosbital/Qt/6.7.2/gcc_64/include",
+                "/home/hosbital/Qt/6.7.2/gcc_64/include/QtCore",
+                "/home/hosbital/Qt/6.7.2/gcc_64/include/QtGui",
+                "/home/hosbital/Qt/6.7.2/gcc_64/include/QtWidgets",
+
+                "/usr/include",                     // Add this for general include files
                 "/usr/local/include",               // Add this for general include files
-                "/usr/include/opencv4",       // Add this for OpenCV version-specific includes
-                "/usr/include/opencv4/opencv2" // Ensure this path if your OpenCV headers are here
+                "/usr/include/opencv4",             // Add this for OpenCV version-specific includes
+                "/usr/include/opencv4/opencv2"      // Ensure this path if your OpenCV headers are here
             ],
             "defines": [],
             "cStandard": "c17",

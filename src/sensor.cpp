@@ -1,15 +1,7 @@
 #include <iostream>
 #include "sensor.h"
 #include "vector"
-bool Sensor::power_trigger()
-{
-    return false;
-}
 
-bool Sensor::change_operation_state(int new_state)
-{
-    return false;
-}
 
 Sensor::Sensor()
 {
@@ -39,3 +31,13 @@ void Sensor::start_data_reading()
     {
         return std::vector<double>();
     }
+
+bool Sensor::power_trigger()
+{
+    return false;
+}
+
+bool Sensor::change_operation_state(int new_state)
+{
+    return false;
+}
